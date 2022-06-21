@@ -5,6 +5,7 @@
 
     margin: 0px;
     font-family: var(--regular-font);
+    font-size: 18px;
 }
 
 body {
@@ -23,8 +24,7 @@ h1, h2, h3 {
 
 .page-container {
     display: grid;
-    height: 100vh;
-    grid-template-rows: 2fr 15fr 1fr;
+    grid-template-rows: 5% 90% 5%;
 }
 
 .header {
@@ -81,7 +81,7 @@ h1, h2, h3 {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 6fr 2fr 9fr;
+    grid-template-rows: .5fr 6fr 2fr 6fr;
     padding: 2rem;
     gap: 16px;
 }
@@ -148,8 +148,12 @@ h1, h2, h3 {
 
 .achievements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+    grid-template-rows: 1fr 1fr;
     gap: 16px;
+    height: 15rem;
+    width: 100%;
+    margin: 2rem 0;
 }
 
 .achievement {
@@ -162,6 +166,9 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     gap: 16px;
+    height: 15rem;
+    width: 100%;
+    margin: 2rem 0;
 }
 
 .goal {
