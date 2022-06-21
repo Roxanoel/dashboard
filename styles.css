@@ -53,6 +53,20 @@ ul {
 
 .sidebar {
     background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15%;
+}
+
+.sidebar > div {
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+.sidebar > div:last-child {
+    border-bottom: none;
 }
 
 .footer {
