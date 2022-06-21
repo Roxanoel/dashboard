@@ -3,15 +3,13 @@
 }
 
 .page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
     height: 100vh;
+    grid-template-rows: 2fr 15fr 1fr;
 }
 
 .header {
     background-color: aqua;
-    margin: 0px;
 }
 
 .main {
