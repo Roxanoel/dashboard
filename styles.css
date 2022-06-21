@@ -1,0 +1,23 @@
+:root {
+    margin: 0px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    background-color: aqua;
+    margin: 0px;
+}
+
+.main {
+    background-color: blueviolet;
+}
+
+.footer {
+    background-color: aqua;
+}
