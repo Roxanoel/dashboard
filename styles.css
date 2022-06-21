@@ -81,7 +81,7 @@ h1, h2, h3 {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr 4fr;
+    grid-template-rows: 1fr 6fr 2fr 9fr;
     padding: 2rem;
     gap: 16px;
 }
@@ -97,6 +97,13 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 20% 80%;
+    align-items: center;
+}
+
+.project-image {
+    background-color: gold;
+    border-radius: 5px;
+    height: 100%
 }
 
 .current-project > h2 {
@@ -106,6 +113,7 @@ h1, h2, h3 {
 .project-description {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .project-queue {
@@ -131,9 +139,35 @@ h1, h2, h3 {
 
 .achievements, .learning-goals {
     background-color: white;
-    margin: 8px 32px 0 0;
+    margin: 1rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
 }
 
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 16px;
+}
+
+.achievement {
+    background-color: coral;
+    border-radius: 5px;
+    padding-top: 100%;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 16px;
+}
+
+.goal {
+    border-radius: 5px;
+    background-color: brown;
+}
 
 .footer {
     background-color: aqua;
