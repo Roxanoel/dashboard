@@ -180,6 +180,12 @@ h1, h2, h3 {
     background-color: aqua;
 }
 
+.footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+}
+
 #resume-btn {
     width: fit-content;
     padding: 8px 16px;
