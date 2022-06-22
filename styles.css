@@ -52,11 +52,16 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: var(--main-colour);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px;
+}
+
+header, footer {
+    background-color: var(--main-colour);
+    font-weight: 600;
+    color: white;
 }
 
 .logo-box {
@@ -81,8 +86,6 @@ header {
     display: flex;
     justify-content: space-between;
     gap: clamp(32px, 10vw, 10em);
-    font-weight: 600;
-    color: white;
 }
 
 .header-profile-box {
@@ -352,7 +355,8 @@ main {
 }
 
 footer {
-    background-color: var(--main-colour);
+    display: grid;
+    align-items: center;
 }
 
 footer ul {
