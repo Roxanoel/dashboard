@@ -338,6 +338,12 @@ main {
     background-color: var(--secondary-colour);
     height: 5vh;
     width: 100%;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 1rem;
 }
 
 .btn-container {
