@@ -3,6 +3,14 @@
 :root {
     --regular-font: 'Montserrat', sans-serif;
 
+    --background-light: #F2E9E4;
+    --main-colour: #65b891;
+    --secondary-colour: #449dd1;
+    --background-dark: #4a4e69;
+    --accent-bright: #f58f00;
+    --accent-darker: #CC7700;
+    --light-grey: #A0A3BB;
+
     margin: 0px;
     font-family: var(--regular-font);
     font-size: 18px;
@@ -10,6 +18,20 @@
 
 body {
     margin: 0;
+}
+
+button {
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--light-grey);
+    background-color: var(--accent-bright);
+    padding: 8px 16px;
+    font-size: 1.3rem;
+    width: fit-content;
+    height: 3rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px var(--accent-darker);
 }
 
 ul {
@@ -28,7 +50,7 @@ h1, h2, h3 {
 }
 
 .header {
-    background-color: aqua;
+    background-color: var(--main-colour);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +69,7 @@ h1, h2, h3 {
     height: 2rem;
     width: 20vw;
     border-radius: 2rem;
-    border: 1px solid grey;
+    border: 1px solid var(--background-dark);
     padding: 0 1rem;
     font-size: 16px;
 }
@@ -64,13 +86,13 @@ h1, h2, h3 {
 }
 
 .main {
-    background-color: blueviolet;
+    background-color: var(--background-light);
     display: grid;
     grid-template-columns: minmax(275px, 20%) auto;
 }
 
 .sidebar {
-    background-color: chartreuse;
+    background-color: var(--background-dark);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -79,7 +101,7 @@ h1, h2, h3 {
 }
 
 .sidebar > div {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--light-grey);
     width: 100%;
 }
 
@@ -110,7 +132,7 @@ h1, h2, h3 {
 }
 
 .project-image {
-    background-color: gold;
+    background-color: var(--light-grey);
     border-radius: 5px;
     height: 100%
 }
@@ -142,12 +164,14 @@ h1, h2, h3 {
 }
 
 .queue-cards > .card {
-    background-color: white;
+    background-color: var(--secondary-colour);
     width: 10vw;
 }
 
 .achievements, .learning-goals {
     background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 5px var(--light-grey);
     margin: 1rem 2rem 0 0;
     display: grid;
     align-items: center;
@@ -164,7 +188,7 @@ h1, h2, h3 {
 }
 
 .achievement {
-    background-color: coral;
+    background-color: var(--main-colour);
     border-radius: 5px;
     width: 5vw;
     height: 5vw;
@@ -180,7 +204,7 @@ h1, h2, h3 {
 
 .goal {
     border-radius: 5px;
-    background-color: brown;
+    background-color: var(--secondary-colour);
     height: 5vh;
     width: 100%;
 }
@@ -190,13 +214,8 @@ h1, h2, h3 {
     justify-items: end;
 }
 
-.see-more {
-    height: 3rem;
-    width: 7rem;
-}
-
 .footer {
-    background-color: aqua;
+    background-color: var(--main-colour);
 }
 
 .footer ul {
@@ -205,8 +224,3 @@ h1, h2, h3 {
     gap: 20vw;
 }
 
-#resume-btn {
-    width: fit-content;
-    padding: 8px 16px;
-    font-size: 1.3rem;
-}
