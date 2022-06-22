@@ -141,6 +141,43 @@ h1, h2, h3 {
     border-bottom: none;
 }
 
+.sidebar-nav, .sidebar-settings {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 1rem 0;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.nav-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.sidebar-nav .nav-icon:nth-child(1) {
+    content: url("Icons/folder-white.svg");
+}
+
+.sidebar-nav .nav-icon:nth-child(3) {
+    content: url("Icons/award-white.svg");
+}
+
+.sidebar-nav .nav-icon:nth-child(5) {
+    content:url("Icons/list-white.svg")
+}
+
+.sidebar-nav .nav-icon:nth-child(7) {
+    content: url("Icons/user-white.svg");
+}
+
+.sidebar-settings .nav-icon:nth-child(1) {
+    content: url("Icons/settings-white.svg");
+}
+
+.sidebar-settings .nav-icon:nth-child(3) {
+    content: url("Icons/log-out-white.svg");
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
