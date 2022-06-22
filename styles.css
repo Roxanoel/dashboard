@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 .page-container {
     display: grid;
-    grid-template-rows: 5% 90% 5%;
+    grid-template-rows: 10% 85% 5%;
 }
 
 .header {
