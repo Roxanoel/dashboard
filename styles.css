@@ -4,7 +4,9 @@
     --regular-font: 'Montserrat', sans-serif;
 
     --background-light: #F2E9E4;
-    --main-colour: #65b891;
+    --main-colour-lighter: #6ab190;
+    --main-colour: #3a946a;
+    --main-colour-darker: #236144;
     --secondary-colour: #449dd1;
     --background-dark: #4a4e69;
     --accent-bright: #f58f00;
@@ -63,6 +65,7 @@ header {
     font-family: var(--regular-font);
     font-weight: 900;
     font-size: 2.5rem;
+    color: white;
 }
 
 .search input {
@@ -78,11 +81,17 @@ header {
     display: flex;
     justify-content: space-between;
     gap: clamp(32px, 10vw, 10em);
+    font-weight: 600;
+    color: white;
 }
 
 .header-profile-box {
     display: flex;
     justify-content: flex-end;
+    gap: 1rem;
+    border-radius: 5px;
+    background-color: var(--main-colour-darker);
+    padding: 0.5rem 1rem;
 }
 
 .profile-pic {
@@ -96,6 +105,7 @@ header {
 .username {
     text-align: center;
     font-weight: 600;
+    color:white;
 }
 
 main {
