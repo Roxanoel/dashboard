@@ -9,6 +9,7 @@
     --main-colour-darker: #236144;
     --secondary-colour: #449dd1;
     --background-dark: #4a4e69;
+    --text-dark:#22242e;
     --accent-bright: #f58f00;
     --accent-darker: #CC7700;
     --light-grey: #A0A3BB;
@@ -16,6 +17,7 @@
     margin: 0px;
     font-family: var(--regular-font);
     font-size: 18px;
+    color: var(--text-dark);
 }
 
 body {
@@ -203,7 +205,7 @@ main {
     grid-column: 1 / -1;
     font-size: 2.5rem;
     font-weight: 700;
-    color:rgb(34, 36, 46);
+    color:#28305a;
 }
 
 .current-project {
