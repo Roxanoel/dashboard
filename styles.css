@@ -132,7 +132,10 @@ h1, h2, h3 {
 }
 
 .project-image {
-    background-color: var(--light-grey);
+    background-color: white;
+    background-image: url("Images/Cool\ Kids\ -\ Study.png");
+    background-size: cover;
+    background-position: center bottom;
     border-radius: 5px;
     height: 100%
 }
@@ -164,8 +167,29 @@ h1, h2, h3 {
 }
 
 .queue-cards > .card {
-    background-color: var(--secondary-colour);
     width: 10vw;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.queue-cards :nth-child(1) {
+    background-image: url("Images/The\ Little\ Things\ -\ Business\ Planning.png");
+}
+
+.queue-cards :nth-child(2) {
+    background-image: url("Images/Cool\ Kids\ -\ Performing.png");
+}
+
+.queue-cards :nth-child(3) {
+    background-image: url("Images/Olá\ -\ Gardening\ Together.png");
+}
+
+.queue-cards :last-child {
+    background-color: var(--main-colour);
+    background-image: url("Icons/plus-circle-white.svg");
+    background-size: 3rem 3rem;
 }
 
 .achievements, .learning-goals {
